@@ -11,5 +11,22 @@ html{
 body{
     font-size: 16px;
     line-height: 1.5;
-    font-family: serif;
+    z-index: 1;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  .layout {
+      @include layout (flex, center, space-between)
+  }
+  img {
+      display: flex;
+  }

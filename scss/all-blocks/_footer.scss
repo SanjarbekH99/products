@@ -1,0 +1,211 @@
+footer {
+    // box-shadow:0 0px 4px #cacaca;
+    margin: 0 0;
+    margin-top: 20px;
+    padding: 40px 0;
+    height: 200px;
+.footer{
+    display: flex;
+    justify-content: space-around;
+    &__navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:flex-start;
+        &__title{
+            text-align: left;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #333333;
+            margin: 0;
+        }
+        .coustomers{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            &__item{
+                &__link{
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.04em;
+                    color: #333333;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+       
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        position: relative;
+        padding-bottom: 30px;
+        &__email{
+            padding: 8px 18px;
+            margin: 22px 0;
+            border: none;
+            border-bottom: 1px solid #C4C4C4;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.04em;
+            color: #828282;
+            &:focus, textarea:focus, select:focus{
+                outline: none;
+            }
+        }
+        &__follow{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.04em;
+            color: #333333;
+            background: #FFFFFF;
+            border: 1px solid #333333;
+            text-align: center;
+            width: 155px;
+            padding: 8px 0;
+            &:hover{
+                background: rgb(185, 185, 185);
+                color: white;
+                border:none;
+                box-shadow: 0 0 6px rgb(80, 80, 80);
+            }
+            &:active{
+                background: rgb(151, 151, 151);
+                border:none;
+                color: white;
+                box-shadow: 0 0 10px white;
+            }
+        }
+    }
+}
+}
+//.footerga height bermasam scroll bolib qoliyapti
+@media only screen and (max-width:655px)  {
+    footer {
+        box-shadow:0 0px 4px #cacaca;
+        margin: 20px 0;
+        height: 375px;
+        padding: 0px 15px;
+    .footer{
+        display: flex;
+        align-items:center;
+        flex-wrap: wrap;
+        // border:1px solid red;
+        height: 375px;
+
+        &__navbar{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items:flex-start;
+            margin-left: 10px;
+            &__title{
+                text-align: left;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: #333333;
+                margin: 0;
+            }
+            .coustomers{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                &__item{
+                    &__link{
+                        text-decoration: none;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 0.04em;
+                        color: #333333;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+           
+        }
+        .about{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: flex-start;
+            &__email{
+                padding: 8px 18px;
+                margin: 22px 0;
+                border: none;
+                border-bottom: 1px solid #C4C4C4;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.04em;
+                color: #828282;
+                &:focus, textarea:focus, select:focus{
+                    outline: none;
+                }
+            }
+            &__follow{
+                position: absolute;
+                right: 0;
+                bottom: -30px;
+                text-decoration: none;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.04em;
+                color: #333333;
+                background: #FFFFFF;
+                border: 1px solid #333333;
+                text-align: center;
+                width: 155px;
+                padding: 8px 0;
+                &:hover{
+                    background: rgb(77, 77, 77);
+                    color: white;
+                    border:none;
+                    box-shadow: 0 0 10px black;
+                }
+                &:active{
+                    background: rgb(161, 161, 161);
+                    border:none;
+                    color: white;
+                    box-shadow: 0 0 10px white;
+                }
+            }
+        }
+    }
+
+    }
+}
